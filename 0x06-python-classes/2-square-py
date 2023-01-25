@@ -1,17 +1,19 @@
 #!/usr/bin/python3
-"""Define a class Square."""
+"""This module creates a class named Square"""
 
 
 class Square:
-    """Represent a square."""
-
+    """A class named Square
+    Attributes:
+    attr1 (size): size of square
+    """
     def __init__(self, size=0):
-        """Initialize a new Square.
-        Args:
-            size (int): The size of the new square.
         """
-        if not isinstance(size, int):
+        Args:
+        size (int): size for __size attribute of class instance
+        """
+        if type(size) != int:
             raise TypeError("size must be an integer")
-        elif size < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
