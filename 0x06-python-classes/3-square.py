@@ -1,13 +1,26 @@
 #!/usr/bin/python3
+"""This module creates a class named Square"""
+
+
 class Square:
+    """A class named Square
+    Attributes:
+    attr1 (size): size of square
+    """
     def __init__(self, size=0):
+        """
+        Args:
+        size (int): size for __size attribute of class instance
+        """
         if type(size) != int:
-            raise TypeError('size must be an integer')
-        elif size < 0:
-            raise ValueError('size must be >= 0')
-        else:
-            self.__size = size
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = size
 
     def area(self):
-        size = self.__size
-        return size * size
+        """Calculates the area based on size of square
+        Returns:
+        int: The return value. Returns the area
+        """
+        return self.__size * self.
