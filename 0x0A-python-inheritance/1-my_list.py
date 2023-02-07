@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-"""Defines an inherited list class MyList."""
+"""
+MyList class module.
+Define MyList class.
+"""
 
 
 class MyList(list):
-    """extended version of list
-    """
+    """Define a MyList."""
+
     def print_sorted(self):
-        """prints the list in ascending order
-        """
-        copy = self[:]
-        copy.sort()
-        print(copy)
+        """Print the list sorted"""
+        print(sorted(self))
